@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Recommender</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <h1>Movie Recommender</h1>
+        <p>Explore movies and get recommendations based on your interests.</p>
+      </header>
+
+      <section class="controls">
+        <div>
+          <label for="genre">Genre</label>
+          <select id="genre">
+            <option value="">All</option>
+            <option value="Sci-Fi">Sci-Fi</option>
+            <option value="Drama">Drama</option>
+            <option value="Action">Action</option>
+            <option value="Horror">Horror</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="liked-movie">Liked movie</label>
+          <input id="liked-movie" placeholder="Type movie title" />
+        </div>
+
+        <div>
+          <button id="load-movies">Load Movies</button>
+          <button id="load-recommendations">Get Recommendations</button>
+        </div>
+      </section>
+
+      <section>
+        <h2>Available Movies</h2>
+        <div id="movies" class="grid"></div>
+      </section>
+
+      <section>
+        <h2>Recommendations</h2>
+        <div id="recommendations" class="grid"></div>
+      </section>
+    </div>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>
